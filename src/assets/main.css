@@ -9,6 +9,7 @@
 
 /* Pages */
 @import './styles/pages/home.css';
+@import './styles/pages/about.css';
 
 /* Components */
 @import './styles/cmps/app-header.css';

@@ -22,7 +22,7 @@ export function AppHeader() {
               to="/shoes"
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
-              Players
+              Shoes
             </NavLink>
           </li>
           <li>
