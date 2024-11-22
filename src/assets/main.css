@@ -1,0 +1,16 @@
+/* Setup */
+@import './styles/setup/vars.css';
+@import './styles//setup/typography.css';
+
+/* Base */
+@import './styles//base/base.css';
+@import './styles/base/helpers.css';
+@import './styles/base/layout.css';
+
+/* Pages */
+@import './styles/pages/home.css';
+
+/* Components */
+@import './styles/cmps/app-header.css';
+@import './styles/cmps/shoes-list.css';
+@import './styles/cmps/shoe-preview.css';

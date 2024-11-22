@@ -1,0 +1,70 @@
+.shoes-list {
+  padding: 15px 0 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 15px;
+}
+
+.shoes-list li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--mainBlue);
+  color: var(--mainWhite);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+}
+
+.shoes-list .shoes-actions {
+  padding-block: 0.5rem;
+  border-top: 1px solid gray;
+  text-align: center;
+}
+
+.shoes-list .shoes-actions .remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.vote-btn {
+  background-color: var(--mainRed);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.vote-btn:hover {
+  background-color: var(--mainWhite);
+  border: none;
+  color: var(--mainRed);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.vote-btn.voted {
+  background-color: #28a745;
+  color: white;
+  border: 2px solid #28a745;
+  cursor: pointer;
+}
+
+.vote-btn:disabled {
+  background-color: #ccc;
+  color: #666;
+  border: 2px solid #ccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 900px) {
+  .shoes-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
