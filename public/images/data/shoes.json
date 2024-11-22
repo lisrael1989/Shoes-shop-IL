@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Air Max 270",
+    "brand": "Nike",
+    "img": "https://res.cloudinary.com/dpixrsdwh/image/upload/v1732286672/q0fxjt4n8xbazqykdigp.jpg",
+    "price": 150,
+    "onSale": true
+  },
+  {
+    "name": "Ultraboost 22",
+    "brand": "Adidas",
+    "img": "https://res.cloudinary.com/dpixrsdwh/image/upload/v1732286671/c6frckpsdlmowesa6lnw.jpg",
+    "price": 180,
+    "onSale": false
+  },
+  {
+    "name": "Classic Leather",
+    "brand": "Reebok",
+    "img": "https://res.cloudinary.com/dpixrsdwh/image/upload/v1732286672/dlbcpxezq0wi2t4woeke.jpg",
+    "price": 90,
+    "onSale": true
+  },
+  {
+    "name": "Chuck Taylor All Star",
+    "brand": "Converse",
+    "img": "https://res.cloudinary.com/dpixrsdwh/image/upload/v1732286672/uevoxkt1t9dy8nq8vetw.jpg",
+    "price": 65,
+    "onSale": false
+  },
+  {
+    "name": "Gel-Kayano 28",
+    "brand": "ASICS",
+    "img": "https://res.cloudinary.com/dpixrsdwh/image/upload/v1732286671/ssxuohlqo02wcjvtvyko.jpg",
+    "price": 160,
+    "onSale": true
+  },
+  {
+    "name": "Fresh Foam 1080v11",
+    "brand": "New Balance",
+    "img": "https://res.cloudinary.com/dpixrsdwh/image/upload/v1732286671/abp35899blnxasuoxlys.jpg",
+    "price": 140,
+    "onSale": false
+  }
+]
