@@ -115,8 +115,8 @@ export function ShuffleHero() {
           <br />{' '}
           <strong>we&apos;ve got the perfect pair for every occasion. </strong>
         </p>
-        <button onClick={goShopping} className="shuffle-hero-button">
-          Shop Now
+        <button onClick={goShopping} className="shop-now-btn bn39">
+          <span className="bn39span">Shop Now </span>
         </button>
       </div>
       <div className="shuffle-grid-container">{squares.map((sq) => sq)}</div>
