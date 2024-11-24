@@ -2,7 +2,6 @@ import { createBrowserRouter } from 'react-router';
 import '../src/assets/main.css';
 import { Home } from './components/Home.jsx';
 import { ShoesList } from './components/ShoesList.jsx';
-import { About } from './components/About.jsx';
 import { RouterProvider } from 'react-router-dom';
 import { RootLayout } from './components/RootLayout.jsx';
 import { ShoesProvider } from './Context/ShoesContext.jsx';
@@ -27,11 +26,6 @@ function App() {
         {
           path: 'shoes/:shoeId',
           element: <ShoesDescription />,
-        },
-
-        {
-          path: '/about',
-          element: <About />,
         },
         {
           path: '/add-shoes',

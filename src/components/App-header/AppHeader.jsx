@@ -25,14 +25,6 @@ export function AppHeader() {
               Shoes
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? 'active-link' : '')}
-            >
-              About
-            </NavLink>
-          </li>
         </ul>
       </nav>
     </header>

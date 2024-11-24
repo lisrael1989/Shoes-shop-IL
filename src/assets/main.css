@@ -9,7 +9,6 @@
 
 /* Pages */
 @import './styles/pages/home.css';
-@import './styles/pages/about.css';
 @import './styles/pages/add-shoe-page.css';
 @import './styles/pages/shoe-details.css';
 
