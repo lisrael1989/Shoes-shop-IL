@@ -15,6 +15,24 @@ Shoes Shop IL is a React-based e-commerce web application for showcasing, managi
 - **Responsive Design**: Fully responsive layout for desktop and mobile.
 - **Persistent Data**: Shoes and users are stored locally or through MockAPI for backend simulation.
 
+
+## Screenshots 📸
+
+### Home Page
+
+![Home Page](https://res.cloudinary.com/dpixrsdwh/image/upload/v1732460381/1_pndosa.png)
+
+### Shoes List
+
+![Shoes List](https://res.cloudinary.com/dpixrsdwh/image/upload/v1732460380/2_wsdrwg.png)
+
+### shoe info
+
+![Shoe info](https://res.cloudinary.com/dpixrsdwh/image/upload/v1732460380/3_fcduyh.png)
+
+---
+
+
 ## Technologies Used 🛠️
 
 - **Frontend**:
@@ -25,9 +43,9 @@ Shoes Shop IL is a React-based e-commerce web application for showcasing, managi
   - MockAPI for simulating backend operations
 - **State Management**:
   - Context API
-  - Custom Hooks (`useAuth`, `useShoes`)
+  - Custom Hooks
 - **Local Storage**:
-  - User authentication and shoe data are persisted in `localStorage`.
+  - User authentication 
 
 ## Installation 🚀
 
@@ -69,68 +87,8 @@ Shoes Shop IL is a React-based e-commerce web application for showcasing, managi
 1. Add new shoes using the "Add Shoes" button.
 2. Remove shoes directly from the listing.
 
-## Project Structure 📂
-
-```
-src/
-├── components/
-│   ├── AppHeader.jsx
-│   ├── ShoesList.jsx
-│   ├── ShoePreview.jsx
-│   ├── LoginPage.jsx
-│   ├── AddShoe.jsx
-│   └── ShoesDescription.jsx
-├── Context/
-│   ├── ShoesContext.jsx
-├── hooks/
-│   ├── useAuth.js
-├── assets/
-│   ├── main.css
-│   └── logo.png
-└── App.jsx
-```
-
-## API Endpoints 🌐
-
-### MockAPI
-
-- **Base URL**: `https://673dae2e0118dbfe8608492a.mockapi.io/shoes`
-- **Endpoints**:
-  - `GET /shoes`: Fetch all shoes.
-  - `POST /shoes`: Add a new shoe.
-  - `DELETE /shoes/:id`: Remove a shoe.
-
-## Future Enhancements ✨
-
-- Add search and filter functionality.
-- Integrate real backend services (e.g., Firebase, Node.js).
-- Implement payment gateway for purchases.
-- Add user profiles with order history.
-
-## Contributors 🙌
-
-- **[Your Name](https://github.com/your-username)** - Developer
-
-## License 📜
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Screenshots 📸
-
-### Home Page
-
-![Home Page](https://res.cloudinary.com/dpixrsdwh/image/upload/v1732460381/1_pndosa.png)
-
-### Shoes List
-
-![Shoes List](https://res.cloudinary.com/dpixrsdwh/image/upload/v1732460380/2_wsdrwg.png)
-
-### shoe info
-
-![Shoe info](https://res.cloudinary.com/dpixrsdwh/image/upload/v1732460380/3_fcduyh.png)
-
----
 
 Enjoy using **Shoes Shop IL**! 🎉
