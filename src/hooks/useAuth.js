@@ -17,15 +17,15 @@ export function useAuth() {
   }, []);
 
   const handleLogin = (loggedInUser, navigate) => {
-    setUser(loggedInUser); // Update the context state
+    setUser(loggedInUser);
     localStorage.setItem('user', JSON.stringify(loggedInUser));
-    navigate('/shoes'); // Redirect after login
+    navigate('/shoes');
   };
 
   const handleLogout = (navigate) => {
-    setUser(null); // Reset the context state
+    setUser(null);
     localStorage.removeItem('user');
-    navigate('/'); // Redirect to home after logout
+    navigate('/');
   };
 
   return {
