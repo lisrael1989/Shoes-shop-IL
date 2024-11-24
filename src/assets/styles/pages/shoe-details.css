@@ -1,0 +1,32 @@
+.shoes-description {
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
+}
+
+.shoes-description h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.shoes-description img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.go-back {
+  cursor: pointer;
+  background-color: var(--mainRed);
+  color: var(--mainWhite);
+  padding: 0.7rem;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border: none;
+}

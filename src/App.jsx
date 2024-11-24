@@ -7,7 +7,7 @@ import { RouterProvider } from 'react-router-dom';
 import { RootLayout } from './components/RootLayout.jsx';
 import { ShoesProvider } from './Context/ShoesContext.jsx';
 import { AddShoe } from './components/AddShoe.jsx';
-import { ShoesDescription } from './components/ShoesDescription.jsx';
+import { ShoesDescription } from './components/ShoesDescription';
 
 function App() {
   const Router = createBrowserRouter([
@@ -22,13 +22,13 @@ function App() {
         {
           path: '/shoes',
           element: <ShoesList />,
-          children: [
-            {
-              path: ':shoeId',
-              element: <ShoesDescription />,
-            },
-          ],
         },
+
+        {
+          path: 'shoes/:shoeId',
+          element: <ShoesDescription />,
+        },
+
         {
           path: '/about',
           element: <About />,

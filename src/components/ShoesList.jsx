@@ -12,6 +12,11 @@ export function ShoesList() {
     navigate('/add-shoes');
   }
 
+  function handleShoeClick(shoeId) {
+    navigate(`/shoes/${shoeId}`);
+    console.log(shoeId);
+  }
+
   if (shoes.length === 0) return <p>Loading...</p>;
   return (
     <>
@@ -26,11 +31,19 @@ export function ShoesList() {
       <ul className="shoes-list">
         {shoes.map((shoe) => (
           <li key={shoe.id}>
-            <ShoePreview shoe={shoe} />
+            <div
+              onClick={() => handleShoeClick(shoe.id)}
+              style={{ cursor: 'pointer' }}
+            >
+              <ShoePreview shoe={shoe} />
+            </div>
             {shoe.onSale && <p className="shoe-sale">sale</p>}
             <button
               className="remove-shoe-btn"
-              onClick={() => removeShoe(shoe.id)}
+              onClick={(e) => {
+                e.stopPropagation();
+                removeShoe(shoe.id);
+              }}
             >
               X
             </button>
