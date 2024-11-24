@@ -1,12 +1,12 @@
 footer {
   position: fixed;
-  /* width: 100%; */
   bottom: 0;
   left: 0;
   right: 0;
   background-color: var(--mainBlue);
   color: var(--mainWhite);
   text-align: center;
-  padding: 1rem;
-  margin-top: 4rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin: 0 auto !important;
 }

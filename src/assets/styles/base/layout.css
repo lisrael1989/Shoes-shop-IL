@@ -1,7 +1,6 @@
 .main-layout {
   margin: 0 auto;
-  /* padding-left: 1rem;
-  padding-right: 1.6rem; */
+  margin-bottom: 100px;
 }
 .main-layout > * {
   grid-column: 2;

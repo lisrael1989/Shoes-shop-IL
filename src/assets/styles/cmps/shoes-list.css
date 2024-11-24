@@ -5,6 +5,7 @@
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 15px;
   margin-bottom: 50px;
+  margin: 0;
 }
 
 .shoes-list li {
@@ -46,6 +47,20 @@
 
   font-size: 1.1rem;
   text-transform: uppercase;
+}
+
+.add-new-shoes-btn {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: fit-content;
+  height: 2.2rem;
+  background-color: var(--mainRed);
+  color: var(--mainWhite);
+  font-size: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(164, 8, 8, 0.781);
+  border: NONE;
 }
 
 @media screen and (max-width: 900px) {
