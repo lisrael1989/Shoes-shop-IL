@@ -6,6 +6,7 @@ import { About } from './components/About.jsx';
 import { RouterProvider } from 'react-router-dom';
 import { RootLayout } from './components/RootLayout.jsx';
 import { ShoesProvider } from './Context/ShoesContext.jsx';
+import { AddShoe } from './components/AddShoe.jsx';
 
 function App() {
   const Router = createBrowserRouter([
@@ -24,6 +25,10 @@ function App() {
         {
           path: '/about',
           element: <About />,
+        },
+        {
+          path: '/add-shoes',
+          element: <AddShoe />,
         },
       ],
     },
