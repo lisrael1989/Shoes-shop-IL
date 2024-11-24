@@ -13,6 +13,7 @@
   width: 90px;
   background-color: white;
   border-radius: 50%;
+  padding: 5px;
 }
 
 .app-header h1 a {
@@ -32,7 +33,7 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   padding: 3px 5px;
 }
 
@@ -62,7 +63,7 @@
   font-weight: bold;
   padding: 3px 5px;
   margin-bottom: 2px;
-  border-bottom: 4px solid var(--mainWhite);
+  border-bottom: 2px solid var(--mainWhite);
 }
 
 .user-info {

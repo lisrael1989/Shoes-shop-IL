@@ -1,23 +1,6 @@
-.shoes-description {
-  text-align: center;
-  padding: 20px;
-  max-width: 500px;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  margin-top: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.238);
-}
-
-.shoes-description h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.shoes-description img {
-  max-width: 100%;
-  border-radius: 8px;
+body {
+  display: grid;
+  text-transform: uppercase;
 }
 
 .go-back {
@@ -29,4 +12,91 @@
   margin-top: 10px;
   margin-left: 20px;
   border: none;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 520px;
+  min-height: 280px;
+  /* height: fit-content; */
+  background: var(--white);
+  box-shadow: 5px 5px 15px rgba(var(--shadow-rgb), 0.5),
+    -5px -5px 15px rgba(var(--shadow-rgb), 0.5);
+  border-radius: 10px;
+}
+
+.shoe-p {
+  font-size: 0.6em;
+  color: var(--rose);
+  letter-spacing: 1px;
+}
+
+.shoe-name-description {
+  font-size: 1.2em;
+  color: var(--dark);
+  margin-top: -5px;
+}
+
+.shoe-price-description {
+  color: var(--tan);
+  margin-top: -5px;
+}
+
+.shoe-img-description {
+  width: 290px;
+  margin-top: 20px;
+}
+
+.slideshow-buttons {
+  top: 70%;
+  display: none;
+}
+
+.product {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 15%;
+  left: 62%;
+}
+
+.desc {
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 17px;
+  color: var(--dark);
+  font-size: 0.7em;
+  line-height: 1.6em;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.button {
+  background: var(--mainRed);
+  padding: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: -1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--rose);
+  transition: all 0.4s ease-in-out;
+}
+
+.add {
+  width: 67%;
+  margin-right: 5px;
+}
+
+.like {
+  width: 22%;
 }

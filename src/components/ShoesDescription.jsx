@@ -21,17 +21,28 @@ export function ShoesDescription() {
       <button className="go-back" onClick={goBack}>
         Go back
       </button>
-      <div className="shoes-description">
-        <h2>{shoe.name}</h2>
-        <p>Brand: {shoe.brand}</p>
-        <p>Price: ${shoe.price}</p>
-        <p>{shoe.description}</p>
-        {shoe.onSale && <p style={{ color: 'red' }}>On Sale!</p>}
-        <img
-          src={shoe.img}
-          alt={shoe.name}
-          style={{ maxWidth: '300px', marginTop: '20px' }}
-        />
+
+      <div className="container">
+        <div className="images">
+          <img
+            className="shoe-img-description"
+            src={shoe.img}
+            alt="{shoe.name}"
+          />
+        </div>
+
+        <div className="product">
+          <p className="shoe-p">{shoe.brand}</p>
+          <h1 className="shoe-name-description">{shoe.name}</h1>
+          <h2 className="shoe-price-description">{shoe.price}</h2>
+          <p className="shoe-p desc">{shoe.description}</p>
+          <div className="buttons">
+            <button className="add button">Add to Cart</button>
+            <button className="like button">
+              <span>♥</span>
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
