@@ -35,3 +35,20 @@ export async function addShoes(newShoe) {
     return null;
   }
 }
+
+export async function removeShoe(shoeId) {
+  try {
+    const response = await fetch(`${BASE_URL}/${shoeId}`, {
+      method: 'DELETE',
+    });
+    if (!response.ok) {
+      throw new Error(
+        `Failed to delete shoe: ${response.status} ${response.statusText}`
+      );
+    }
+    return true;
+  } catch (error) {
+    console.error('Error deleting shoe:', error.message);
+    return false;
+  }
+}

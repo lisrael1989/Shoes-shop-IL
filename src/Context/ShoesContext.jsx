@@ -1,6 +1,11 @@
 import { createContext, useState, useEffect } from 'react';
-import { fetchShoes, addShoes } from '../service/api.js';
+import {
+  fetchShoes,
+  addShoes,
+  removeShoe as removeShoeAPI,
+} from '../service/api.js';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const ShoesContext = createContext();
 
 export function ShoesProvider({ children }) {
@@ -27,10 +32,22 @@ export function ShoesProvider({ children }) {
     }
   }
 
+  async function removeShoe(shoeId) {
+    try {
+      const success = await removeShoeAPI(shoeId);
+      if (success) {
+        setShoes((prevShoes) => prevShoes.filter((shoe) => shoe.id !== shoeId));
+      }
+    } catch (error) {
+      console.error('Error removing shoe:', error.message);
+    }
+  }
+
   // Context value
   const value = {
     shoes,
     addShoe,
+    removeShoe,
   };
 
   return (

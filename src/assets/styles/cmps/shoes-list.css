@@ -63,6 +63,17 @@
   border: NONE;
 }
 
+.remove-shoe-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  background-color: var(--mainBlue);
+  color: var(--mainWhite);
+  /* padding: 0.7rem; */
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 900px) {
   .shoes-list {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

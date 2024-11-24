@@ -7,6 +7,7 @@ import { RouterProvider } from 'react-router-dom';
 import { RootLayout } from './components/RootLayout.jsx';
 import { ShoesProvider } from './Context/ShoesContext.jsx';
 import { AddShoe } from './components/AddShoe.jsx';
+import { ShoesDescription } from './components/ShoesDescription.jsx';
 
 function App() {
   const Router = createBrowserRouter([
@@ -21,6 +22,12 @@ function App() {
         {
           path: '/shoes',
           element: <ShoesList />,
+          children: [
+            {
+              path: ':shoeId',
+              element: <ShoesDescription />,
+            },
+          ],
         },
         {
           path: '/about',
