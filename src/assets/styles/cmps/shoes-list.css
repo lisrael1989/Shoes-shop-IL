@@ -44,7 +44,6 @@
   text-align: right;
   font-weight: 600;
   letter-spacing: 2px;
-
   font-size: 1.1rem;
   text-transform: uppercase;
 }
@@ -77,5 +76,11 @@
 @media screen and (max-width: 900px) {
   .shoes-list {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+@media screen and (max-width: 650px) {
+  .shoe-sale {
+    width: 60px;
+    font-size: 0.8rem;
   }
 }
