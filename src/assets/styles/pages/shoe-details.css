@@ -102,12 +102,12 @@ body {
 @media screen and (max-width: 600px) {
   .container {
     display: flex;
-    flex-direction: column; /* Stack items in a column */
+    flex-direction: column;
     margin: 20px 10px;
   }
 
   .images {
-    order: 1; /* Image comes after product */
+    order: 1;
   }
 
   .shoe-img-description {
@@ -115,7 +115,7 @@ body {
   }
 
   .product {
-    order: 2; /* Product comes first */
+    order: 2;
     position: static;
     width: 75%;
   }
