@@ -1,5 +1,5 @@
 body {
-  display: grid;
+  /* display: grid; */
 }
 
 .go-back {
@@ -19,7 +19,6 @@ body {
   overflow: hidden;
   width: 520px;
   min-height: 280px;
-  /* height: fit-content; */
   background: var(--white);
   box-shadow: 5px 5px 15px rgba(var(--shadow-rgb), 0.5),
     -5px -5px 15px rgba(var(--shadow-rgb), 0.5);
@@ -98,4 +97,26 @@ body {
 
 .like {
   width: 22%;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    margin: 20px 10px;
+  }
+
+  .images {
+    order: 1; /* Image comes after product */
+  }
+
+  .shoe-img-description {
+    width: 340px;
+  }
+
+  .product {
+    order: 2; /* Product comes first */
+    position: static;
+    width: 75%;
+  }
 }
